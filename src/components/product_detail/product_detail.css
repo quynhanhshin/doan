@@ -1,0 +1,4 @@
+.card{
+    background: var(--main-color) !important;
+    margin-top: 10px;
+}

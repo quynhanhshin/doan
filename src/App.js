@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import Product from "./pages/products/Product_list";
 import Contact from "./pages/contact/Contact";
 import NotFound from "./components/notFound/NotFound";
+import "./root.css";
 export default function App() {
         return (
                 <div>
