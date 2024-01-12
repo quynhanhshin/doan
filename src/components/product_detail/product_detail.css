@@ -4,6 +4,20 @@
     border-radius: 20px !important;
     border: 1px solid var(--border-color) !important;
 }
+.card:hover {
+    border: 2px dashed var(--border-color) !important;
+    background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+    background-position: 0px 0px, 200px 100px, 0px 100px, 200px 0px;
+    animation: border-dance 4s infinite linear;
+}
+@keyframes border-dance {
+    0% {
+        background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
+    }
+    100% {
+        background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
+    }
+}
 .card-title {
     color: var(--text-color);
     margin: 20px 0 !important;
