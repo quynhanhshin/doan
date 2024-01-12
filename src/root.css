@@ -1,10 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --main-color: hotpink;
-    
+:root {
+    --main-color: #db915e;
+    --text-color: #000;
+    --texth2-color: #8b8686;
+    --border-color: #eae3de;
 }
