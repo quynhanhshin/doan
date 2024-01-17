@@ -1,15 +1,25 @@
+.header{
+    background-color: #f7f3f0;
+    padding: 0 150px;
+}
 .navbar {
-    margin: 50px 200px !important;
+    margin-bottom: 50px !important;
+}
+.navbar li{
+    padding-left: 20px !important;
 }
 .navbar-brand {
     margin: 0 !important;
 }
 .navbar-brand img {
-    width: 70%;
+    width: 50%;
 }
 .nav-link {
-    margin: 0 20px !important;
-    font-size: 17px !important;
+    
+    font-size: 15px !important;
+}
+.navbar-nav{
+    transform: translateX(-100px);
 }
 .nav-link:hover {
     color: var(--main-color) !important;

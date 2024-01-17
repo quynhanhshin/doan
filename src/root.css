@@ -5,10 +5,17 @@
 }
 a{
     text-decoration: none !important;
+    color: #000 !important;
 }
 :root {
     --main-color: #db915e;
     --text-color: #000;
     --texth2-color: #8b8686;
     --border-color: #eae3de;
+}
+ul{
+    padding-left: 0 !important;
+}
+li{
+    list-style: none;
 }
