@@ -1,0 +1,24 @@
+.navbar {
+    margin: 50px 200px !important;
+}
+.navbar-brand {
+    margin: 0 !important;
+}
+.navbar-brand img {
+    width: 70%;
+}
+.nav-link {
+    margin: 0 20px !important;
+    font-size: 17px !important;
+}
+.nav-link:hover {
+    color: var(--main-color) !important;
+}
+.nav-item {
+    list-style: none;
+}
+.nav-link img {
+    padding: 0px 0px !important;
+    margin: 0 5px;
+    width: 40px;
+}
