@@ -8,7 +8,7 @@ export default function Product_detail(props) {
     return (
         <Col sm={6} md={4} lg={4}>
             <div className="product-detail">
-                <Link to={`/product-detail/${product.id}`}>
+                <Link to={`/product/${product.id}`}>
                     <Card>
                         <img alt="Img" src={img} />
                         <CardBody>

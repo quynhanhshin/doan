@@ -12,10 +12,11 @@ a{
     --text-color: #000;
     --texth2-color: #8b8686;
     --border-color: #eae3de;
-}
-ul{
-    padding-left: 0 !important;
+    --text-footer-color: #6e6e6e
 }
 li{
     list-style: none;
+}
+body{
+    font-family: 'Jost', sans-serif !important;
 }
