@@ -1,29 +1,30 @@
 .best-seller {
-    text-align: center;
+        text-align: center;
 }
 .best-seller h3 {
-    font-size: 28px;
-    font-weight: 400;
+        font-size: 28px;
+        font-weight: 400;
 }
 .best-seller p {
-    font-size: 18px;
-    margin-bottom: 23px;
-    margin-top: 11px;
-    color: var(--texth2-color);
+        font-size: 18px;
+        margin-bottom: 23px;
+        margin-top: 11px;
+        color: var(--texth2-color);
 }
 .home-blog {
-    text-align: center;
+        text-align: center;
+        margin: 100px 0;
 }
 .home-blog h3 {
-    font-size: 28px;
-    font-weight: 400;
+        font-size: 28px;
+        font-weight: 400;
 }
 .home-blog p {
-    font-size: 18px;
-    margin-bottom: 23px;
-    margin-top: 11px;
-    color: var(--texth2-color);
+        font-size: 18px;
+        margin-bottom: 23px;
+        margin-top: 11px;
+        color: var(--texth2-color);
 }
 .card-home-blog .card-group {
-    padding: 150px;
+        padding: 150px;
 }

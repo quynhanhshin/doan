@@ -2,16 +2,21 @@
     overflow: hidden;
 
 } */
-.card {
-    margin-bottom: 24px;
-    text-align: center;
-    border-radius: 20px !important;
-    border: 1px solid var(--border-color) !important;
-    transition: 0.1s;
-    overflow: hidden;
+.product {
+        margin-bottom: 24px;
+        text-align: center;
+        border-radius: 20px !important;
+        border: 1px solid var(--border-color) !important;
+        transition: 0.1s;
+        overflow: hidden;
+        /* height: 400px !important; */
 }
-.card:hover {
-    border: 2px dashed var(--border-color) !important;
+.product:hover {
+        border: 2px dashed var(--border-color) !important;
+}
+.product img {
+        width: 60%;
+        margin: 0 auto;
 }
 /* .card:hover{
     border: 2px dashed var(--border-color) !important;
@@ -33,15 +38,15 @@
         background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
     }
 } */
-.card:hover .btn-cart {
-    /* display: block; */
-    transform: translateY(-25px);
-    opacity: 1;
+.product:hover .btn-cart {
+        /* display: block; */
+        transform: translateY(-25px);
+        opacity: 1;
 }
-.card:hover .text-price {
-    /* display: none; */
-    transform: translateY(25px);
-    opacity: 0;
+.product:hover .text-price {
+        /* display: none; */
+        transform: translateY(25px);
+        opacity: 0;
 }
 /* .card:hover {
     border: 2px dashed var(--border-color) !important;
@@ -58,23 +63,24 @@
     }
 } */
 
-.card-title {
-    color: var(--text-color);
-    margin: 20px 0 !important;
+.title-product {
+        color: var(--text-color);
+        margin: 20px 0 !important;
+        font-weight: 400;
 }
 .text-type {
-    color: var(--texth2-color) !important;
+        color: var(--texth2-color) !important;
 }
 .text-type:hover {
-    color: var(--main-color) !important;
+        color: var(--main-color) !important;
 }
 .text-price {
-    color: var(--texth2-color) !important;
-    transition: 0.1s;
+        color: var(--texth2-color) !important;
+        transition: 0.1s;
 }
 .btn-cart {
-    color: var(--main-color) !important;
-    /* display: none; */
-    opacity: 0;
-    transition: 0.1s;
+        color: var(--main-color) !important;
+        /* display: none; */
+        opacity: 0;
+        transition: 0.1s;
 }

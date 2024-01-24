@@ -34,7 +34,7 @@ export default function Home() {
                     <Container>
                         <Row>
                             {data.slice(0, 4).map((item, index) => (
-                                <Product_detail key={index} product={item} img={arr[index]} />
+                                <Product_detail key={index} product={item} img={arr[index]} a={3} /> 
                             ))}
                         </Row>
                     </Container>
@@ -44,7 +44,7 @@ export default function Home() {
                 <h3>READ OUR BLOG</h3>
                 <p>Dignissim enim sit amet venenatis urna convallis ae nean et tortor etiam non qu.</p>
                 <div className="card-home-blog">
-                    <Posts></Posts>
+                    <Posts />
                 </div>
             </div>
             <Footer />

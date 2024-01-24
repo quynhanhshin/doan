@@ -38,7 +38,7 @@ export default function Products() {
                 {/* nằm trong cột thì bọc bằng Row */}
                 <Row>
                     {data.map((item, index) => (
-                        <Product_detail key={index} product={item} img={arr[index]} />
+                        <Product_detail key={index} product={item} img={arr[index]} a={4} />
                     ))}
                 </Row>
             </Container>

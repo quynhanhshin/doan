@@ -1,0 +1,21 @@
+.post-detail {
+        text-align: left;
+        border: none !important;
+        margin-bottom: 10px 0;
+}
+.post-detail .btn-post {
+        color: var(--main-color);
+        font-size: 14px;
+}
+.post-detail .body-post {
+        padding: 0;
+        margin-top: 10px;
+}
+.post-detail .title-post {
+        font-size: 24px;
+        font-weight: 400;
+}
+.post-detail .content-post {
+        margin: 12px 0;
+        font-size: 15px;
+}
