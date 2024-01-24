@@ -1,8 +1,7 @@
-img{
-    /* width: 80%; */
+/* img{
     overflow: hidden;
-    /* padding: 0 50px; */
-}
+
+} */
 .card {
     margin-bottom: 24px;
     text-align: center;
@@ -11,7 +10,7 @@ img{
     transition: 0.1s;
     overflow: hidden;
 }
-.card:hover{
+.card:hover {
     border: 2px dashed var(--border-color) !important;
 }
 /* .card:hover{
@@ -34,12 +33,12 @@ img{
         background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
     }
 } */
-.card:hover .btn-cart{
+.card:hover .btn-cart {
     /* display: block; */
     transform: translateY(-25px);
     opacity: 1;
 }
-.card:hover .text-price{
+.card:hover .text-price {
     /* display: none; */
     transform: translateY(25px);
     opacity: 0;
@@ -73,7 +72,7 @@ img{
     color: var(--texth2-color) !important;
     transition: 0.1s;
 }
-.btn-cart{
+.btn-cart {
     color: var(--main-color) !important;
     /* display: none; */
     opacity: 0;
