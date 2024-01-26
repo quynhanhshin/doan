@@ -1,0 +1,43 @@
+.form-email {
+        border: solid 1px;
+        border-width: 1px 1px 1px 1px;
+        border-color: #f7f3f0;
+        width: 25%;
+        padding: 70px 30px;
+        background-color: #ffffff;
+        text-align: center;
+        margin-left: 100px;
+}
+.form-email .form-control {
+        border-radius: 0;
+        color: #6e6e6e;
+        padding: 17px 20px;
+}
+.form-email .title-email {
+        font-weight: 400;
+        font-size: 28px;
+}
+.form-email .subtitle-email {
+        font-size: 15px;
+        margin: 11px 0 23px 0;
+}
+.form-email .btn {
+        background-color: var(--main-color);
+        width: 100%;
+        padding: 22px 30px 22px 30px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 0;
+        border: none;
+}
+.form-email .btn:hover {
+        background-color: #ea7e37;
+}
+.form-email .btn:hover .icon-btn {
+        opacity: 1;
+        margin-left: 10px;
+}
+.icon-btn {
+        opacity: 0;
+        transition: 0.5s;
+}

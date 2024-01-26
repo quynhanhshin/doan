@@ -1,5 +1,6 @@
 .best-seller {
         text-align: center;
+        margin: 50px 0;
 }
 .best-seller h3 {
         font-size: 28px;
@@ -13,7 +14,7 @@
 }
 .home-blog {
         text-align: center;
-        margin: 100px 0;
+        margin: 50px 0;
 }
 .home-blog h3 {
         font-size: 28px;
@@ -27,4 +28,57 @@
 }
 .card-home-blog .card-group {
         padding: 150px;
+}
+.feedback {
+        text-align: center;
+        margin: 119px 0 0 0;
+        background-color: #f7f3f0;
+        padding: 110px 0px 74px 0px;
+        position: relative;
+}
+.feedback h3 {
+        font-size: 28px;
+        font-weight: 400;
+}
+.feedback .icon-feedback {
+        color: rgb(217, 191, 141);
+}
+.feedback .card {
+        border: none;
+        background-color: #f7f3f0;
+}
+.feedback .text-feedback {
+        font-size: 20px;
+        margin: 16px 0 24px;
+        font-weight: 400;
+}
+.feedback .person-feedback {
+        font-size: 13px;
+        font-weight: 400;
+        color: #8b8686;
+}
+.feedback .img-feedback01 {
+        position: absolute;
+        left: 0;
+        top: 50px;
+}
+.feedback .img-feedback02 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+}
+.feedback .img-feedback03 {
+        position: absolute;
+        right: 0;
+        bottom: 150px;
+}
+.email {
+        background-image: url(../../imgs/bg-email.jpg);
+        padding: 152px 0px 152px 0px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.email .form-email {
+       
 }
