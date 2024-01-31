@@ -1,0 +1,15 @@
+.slick-slider {
+        width: 80%;
+        margin: 0 auto;
+}
+.slick-slider h3 {
+        text-align: center;
+        border: solid 1px black;
+        margin: 100px;
+}
+.slick-prev:before {
+        color: black;
+}
+.slick-next::before {
+        color: black;
+}

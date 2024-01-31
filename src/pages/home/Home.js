@@ -15,6 +15,7 @@ import feedback03 from "../../imgs/feedback-3.png";
 import "./home.css";
 import Posts from "../../components/posts/Posts";
 import Form_email from "../../components/form-email/Form_email";
+import Slider_sp from "../../components/slider_sp/Slider_sp";
 export default function Home() {
         const [data, setData] = useState([]);
         const url = "https://658c2957859b3491d3f59c3a.mockapi.io/Product";
@@ -24,6 +25,13 @@ export default function Home() {
                 });
         }, []);
         let arr = [img1, img2, img3, img4];
+        var sliderSp = {
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+        };
         return (
                 <div>
                         <Header />
@@ -112,6 +120,20 @@ export default function Home() {
                         <div className="email">
                                 <Form_email />
                         </div>
+                        <div className="new-sp">
+                                <h3>NEW ARRIVALS</h3>
+                                <p>Consectetur adipiscing elit ut aliquam duis convalli convalli tellus id interdum ve.</p>
+                                <div className="card-sp-new">
+                                        <Container>
+                                                <Row>
+                                                        {data.slice(0, 4).map((item, index) => (
+                                                                <Product_detail key={index} product={item} img={arr[index]} a={3} />
+                                                        ))}
+                                                </Row>
+                                        </Container>
+                                </div>
+                        </div>
+                        <Slider_sp />
                         <Footer />
                 </div>
         );

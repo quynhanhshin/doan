@@ -79,6 +79,17 @@
         background-repeat: no-repeat;
         background-size: cover;
 }
-/* .email .form-email {
-       
-} */
+.new-sp {
+        text-align: center;
+        margin: 150px 0 50px 0;
+}
+.new-sp h3 {
+        font-size: 28px;
+        font-weight: 400;
+}
+.new-sp p {
+        font-size: 18px;
+        margin-bottom: 23px;
+        margin-top: 11px;
+        color: var(--texth2-color);
+}
