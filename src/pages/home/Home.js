@@ -16,125 +16,121 @@ import "./home.css";
 import Posts from "../../components/posts/Posts";
 import Form_email from "../../components/form-email/Form_email";
 import Slider_sp from "../../components/slider_sp/Slider_sp";
+import Collection from "../../components/collection/Collection";
 export default function Home() {
-        const [data, setData] = useState([]);
-        const url = "https://658c2957859b3491d3f59c3a.mockapi.io/Product";
-        useEffect(() => {
-                axios.get(url).then(function (res) {
-                        setData(res.data);
-                });
-        }, []);
-        let arr = [img1, img2, img3, img4];
-        var sliderSp = {
-                dots: true,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-        };
-        return (
-                <div>
-                        <Header />
-                        <SliderImg />
-                        <div className="best-seller">
-                                <h3>CRIS & BASKETS</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp.</p>
-                                <div className="card-sp-best-seller">
-                                        <Container>
-                                                <Row>
-                                                        {data.slice(0, 4).map((item, index) => (
-                                                                <Product_detail key={index} product={item} img={arr[index]} a={3} />
-                                                        ))}
-                                                </Row>
-                                        </Container>
-                                </div>
-                        </div>
-                        <div className="home-blog">
-                                <h3>READ OUR BLOG</h3>
-                                <p>Dignissim enim sit amet venenatis urna convallis ae nean et tortor etiam non qu.</p>
-                                <div className="card-home-blog">
-                                        <Posts />
-                                </div>
-                        </div>
-                        <div className="feedback">
-                                <Container>
-                                        <h3>HAPPY CUSTOMERS</h3>
-                                        <Row>
-                                                <Col sm={12} lg={4}>
-                                                        <Card>
-                                                                <CardBody>
-                                                                        <div className="icon-feedback">
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                        </div>
-                                                                        <CardText className="text-feedback">
-                                                                                "Donec pretium vulputate sapien necen sagittis aliquam hac habitass platea dictumst quisque sagit."
-                                                                        </CardText>
-                                                                        <CardSubtitle className="person-feedback">PAWEL, CHICAGO</CardSubtitle>
-                                                                </CardBody>
-                                                        </Card>
-                                                </Col>
-                                                <Col sm={12} lg={4}>
-                                                        <Card>
-                                                                <CardBody>
-                                                                        <div className="icon-feedback">
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                        </div>
-                                                                        <CardText className="text-feedback">
-                                                                                "Facilisis magna etiam tempor orci eu lobortis elementum nibh. Id donec ultricese tincidunt aru."
-                                                                        </CardText>
-                                                                        <CardSubtitle className="person-feedback">JASMINE, CALIFORNIA</CardSubtitle>
-                                                                </CardBody>
-                                                        </Card>
-                                                </Col>
-                                                <Col sm={12} lg={4}>
-                                                        <Card>
-                                                                <CardBody>
-                                                                        <div className="icon-feedback">
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                                <i class="fa-solid fa-star"></i>
-                                                                        </div>
-                                                                        <CardText className="text-feedback">
-                                                                                "Massa eget egestas purus viverra a in nisl nisi. Ut tortor pretium viverra suspendise potenti tempor orc ed."
-                                                                        </CardText>
-                                                                        <CardSubtitle className="person-feedback">LOLA, LONDON</CardSubtitle>
-                                                                </CardBody>
-                                                        </Card>
-                                                </Col>
-                                        </Row>
-                                        <img className="img-feedback01" src={feedback01} />
-                                        <img className="img-feedback02" src={feedback02} />
-                                        <img className="img-feedback03" src={feedback03} />
-                                </Container>
-                        </div>
-                        <div className="email">
-                                <Form_email />
-                        </div>
-                        <div className="new-sp">
-                                <h3>NEW ARRIVALS</h3>
-                                <p>Consectetur adipiscing elit ut aliquam duis convalli convalli tellus id interdum ve.</p>
-                                <div className="card-sp-new">
-                                        <Container>
-                                                <Row>
-                                                        {data.slice(0, 4).map((item, index) => (
-                                                                <Product_detail key={index} product={item} img={arr[index]} a={3} />
-                                                        ))}
-                                                </Row>
-                                        </Container>
-                                </div>
-                        </div>
-                        <Slider_sp />
-                        <Footer />
+    const [data, setData] = useState([]);
+    const url = "https://658c2957859b3491d3f59c3a.mockapi.io/Product";
+    useEffect(() => {
+        axios.get(url).then(function (res) {
+            setData(res.data);
+        });
+    }, []);
+    let arr = [img1, img2, img3, img4];
+    var sliderSp = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+    };
+    return (
+        <div>
+            <Header />
+            <SliderImg />
+            <div className="best-seller">
+                <h3>CRIS & BASKETS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp.</p>
+                <div className="card-sp-best-seller">
+                    <Container>
+                        <Row>
+                            {data.slice(0, 4).map((item, index) => (
+                                <Product_detail key={index} product={item} img={arr[index]} a={3} />
+                            ))}
+                        </Row>
+                    </Container>
                 </div>
-        );
+            </div>
+            <div className="home-blog">
+                <h3>READ OUR BLOG</h3>
+                <p>Dignissim enim sit amet venenatis urna convallis ae nean et tortor etiam non qu.</p>
+                <div className="card-home-blog">
+                    <Posts />
+                </div>
+            </div>
+            <div className="feedback">
+                <Container>
+                    <h3>HAPPY CUSTOMERS</h3>
+                    <Row>
+                        <Col sm={12} lg={4}>
+                            <Card>
+                                <CardBody>
+                                    <div className="icon-feedback">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <CardText className="text-feedback">"Donec pretium vulputate sapien necen sagittis aliquam hac habitass platea dictumst quisque sagit."</CardText>
+                                    <CardSubtitle className="person-feedback">PAWEL, CHICAGO</CardSubtitle>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col sm={12} lg={4}>
+                            <Card>
+                                <CardBody>
+                                    <div className="icon-feedback">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <CardText className="text-feedback">"Facilisis magna etiam tempor orci eu lobortis elementum nibh. Id donec ultricese tincidunt aru."</CardText>
+                                    <CardSubtitle className="person-feedback">JASMINE, CALIFORNIA</CardSubtitle>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col sm={12} lg={4}>
+                            <Card>
+                                <CardBody>
+                                    <div className="icon-feedback">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <CardText className="text-feedback">"Massa eget egestas purus viverra a in nisl nisi. Ut tortor pretium viverra suspendise potenti tempor orc ed."</CardText>
+                                    <CardSubtitle className="person-feedback">LOLA, LONDON</CardSubtitle>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                    </Row>
+                    <img className="img-feedback01" src={feedback01} />
+                    <img className="img-feedback02" src={feedback02} />
+                    <img className="img-feedback03" src={feedback03} />
+                </Container>
+            </div>
+            <div className="email">
+                <Form_email />
+            </div>
+            <div className="new-sp">
+                <h3>NEW ARRIVALS</h3>
+                <p>Consectetur adipiscing elit ut aliquam duis convalli convalli tellus id interdum ve.</p>
+                <div className="card-sp-new">
+                    <Container>
+                        <Row>
+                            {data.slice(0, 4).map((item, index) => (
+                                <Product_detail key={index} product={item} img={arr[index]} a={3} />
+                            ))}
+                        </Row>
+                    </Container>
+                </div>
+            </div>
+            <Slider_sp />
+            <Collection />
+            <Footer />
+        </div>
+    );
 }

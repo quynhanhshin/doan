@@ -1,0 +1,27 @@
+.collection {
+    display: flex;
+    padding-top: 97px;
+    justify-content: center;
+}
+.collection .collection-card-1 {
+    margin-right: 24px;
+    text-align: right;
+}
+.collection .collection-card-1 .text {
+    text-align: center;
+    margin: 30px 0 0 300px;
+}
+.collection .collection-card-2 {
+    margin-left: 24px;
+    text-align: left;
+}
+.collection .collection-card-2 .text {
+    text-align: center;
+    margin: 30px 350px 0 0;
+}
+.collection .collection-card-1 img {
+    width: 60%;
+}
+.collection .collection-card-2 img {
+    width: 60%;
+}
