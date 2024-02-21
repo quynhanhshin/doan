@@ -1,27 +1,56 @@
-.collection {
-    display: flex;
-    padding-top: 97px;
-    justify-content: center;
+.contain-card {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 50px;
 }
-.collection .collection-card-1 {
-    margin-right: 24px;
-    text-align: right;
+.card {
+        border: none !important;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
 }
-.collection .collection-card-1 .text {
-    text-align: center;
-    margin: 30px 0 0 300px;
+.card img {
+        width: 99%;
 }
-.collection .collection-card-2 {
-    margin-left: 24px;
-    text-align: left;
+/* .product-collection-1 {
+        position: relative;
+} */
+.product-collection-1 {
+        position: absolute;
 }
-.collection .collection-card-2 .text {
-    text-align: center;
-    margin: 30px 350px 0 0;
+.pin-1 {
+        position: absolute;
+        width: 25% !important;
+        top: 125%;
+        left: 100%;
 }
-.collection .collection-card-1 img {
-    width: 60%;
+.card-product-collection-1 {
+        position: absolute;
+        left: 140%;
+        top: 150px;
 }
-.collection .collection-card-2 img {
-    width: 60%;
+.product-collection-1 .card-product-collection-1 img {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 10px;
+}
+
+.pin-2 {
+        position: absolute;
+        width: 8% !important;
+        top: 48%;
+        left: 45%;
+}
+.pin-3 {
+        position: absolute;
+        width: 8% !important;
+        top: 12%;
+        left: 25%;
+}
+.pin-4 {
+        position: absolute;
+        width: 8% !important;
+        top: 48%;
+        left: 45%;
 }
