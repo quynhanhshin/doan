@@ -8,6 +8,7 @@ import pic04 from "../../imgs/slider-img4.png";
 import pic05 from "../../imgs/slider-img5.png";
 import pic06 from "../../imgs/slider-img6.png";
 import pic07 from "../../imgs/slider-img7.png";
+import { Container } from "reactstrap";
 export default function Responsive() {
     const settings = {
         infinite: true,
@@ -42,43 +43,45 @@ export default function Responsive() {
         ],
     };
     return (
-        <div className="meo">
-            <div className="slider2">
-                <Slider {...settings}>
-                    <div>
-                        <img src={pic01} />
-                        <p>Other</p>
-                    </div>
-                    <div>
-                        <img src={pic02} />
-                        <p>Specials</p>
-                    </div>
-                    <div>
-                        <img src={pic03} />
-                        <p>Carriage</p>
-                    </div>
-                    <div>
-                        <img src={pic01} />
-                        <p>New</p>
-                    </div>
-                    <div>
-                        <img src={pic05} />
-                        <p>Bottles</p>
-                    </div>
-                    <div>
-                        <img src={pic06} />
-                        <p>Cribs</p>
-                    </div>
-                    <div>
-                        <img src={pic07} />
-                        <p>Beds</p>
-                    </div>
-                    <div>
-                        <img src={pic01} />
-                        <p>Toys</p>
-                    </div>
-                </Slider>
+        <Container>
+            <div className="meo">
+                <div className="slider2">
+                    <Slider {...settings}>
+                        <div>
+                            <img src={pic01} />
+                            <p>Other</p>
+                        </div>
+                        <div>
+                            <img src={pic02} />
+                            <p>Specials</p>
+                        </div>
+                        <div>
+                            <img src={pic03} />
+                            <p>Carriage</p>
+                        </div>
+                        <div>
+                            <img src={pic01} />
+                            <p>New</p>
+                        </div>
+                        <div>
+                            <img src={pic05} />
+                            <p>Bottles</p>
+                        </div>
+                        <div>
+                            <img src={pic06} />
+                            <p>Cribs</p>
+                        </div>
+                        <div>
+                            <img src={pic07} />
+                            <p>Beds</p>
+                        </div>
+                        <div>
+                            <img src={pic01} />
+                            <p>Toys</p>
+                        </div>
+                    </Slider>
+                </div>
             </div>
-        </div>
+        </Container>
     );
 }

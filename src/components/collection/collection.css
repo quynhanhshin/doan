@@ -1,56 +1,102 @@
 .contain-card {
-        width: 50%;
-        margin: 0 auto;
-        margin-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 .card {
-        border: none !important;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-        position: relative;
+    border: none !important;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: none !important;
 }
 .card img {
-        width: 99%;
+    width: 99%;
 }
 /* .product-collection-1 {
         position: relative;
 } */
 .product-collection-1 {
-        position: absolute;
+    position: absolute;
 }
-.pin-1 {
-        position: absolute;
-        width: 25% !important;
-        top: 125%;
-        left: 100%;
+.product-collection-1 .pin-1 {
+    position: absolute;
+    width: 40% !important;
+    top: 175%;
+    left: 125%;
+    cursor: pointer;
 }
 .card-product-collection-1 {
-        position: absolute;
-        left: 140%;
-        top: 150px;
+    position: absolute;
+    left: 100%;
+    top: 250px;
+    z-index: 1;
+    opacity: 0;
+    transition: 1s;
+}
+.product-collection-1:hover .card-product-collection-1 {
+    opacity: 1;
+    transform: translateX(80px);
 }
 .product-collection-1 .card-product-collection-1 img {
-        width: 50%;
-        margin: 0 auto;
-        padding-top: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
 }
-
+.product-collection-1 .card-product-collection-1 .title-product {
+    margin: 0 0 !important;
+    font-weight: 500;
+}
+.product-collection-1 .card-product-collection-1 .btn-read-more {
+    background-color: var(--main-color);
+    padding: 5px 0;
+}
+.product-collection-1 .card-product-collection-1 .btn-read-more .read-more-collection {
+    /* background-color: var(--main-color); */
+    color: #eee;
+    font-size: 12px;
+}
+.product-collection-1 .card-product-collection-1 .btn-read-more .icon-btn-read-more {
+    cursor: pointer;
+    color: #eee;
+    font-size: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.product-collection-1 .card-product-collection-1 .btn-read-more:hover .icon-btn-read-more {
+    color: #eee;
+    font-size: 10px;
+    padding-left: 8px;
+    opacity: 1;
+}
 .pin-2 {
-        position: absolute;
-        width: 8% !important;
-        top: 48%;
-        left: 45%;
+    position: absolute;
+    width: 8% !important;
+    top: 48%;
+    left: 45%;
 }
 .pin-3 {
-        position: absolute;
-        width: 8% !important;
-        top: 12%;
-        left: 25%;
+    position: absolute;
+    width: 8% !important;
+    top: 12%;
+    left: 25%;
 }
 .pin-4 {
-        position: absolute;
-        width: 8% !important;
-        top: 48%;
-        left: 45%;
+    position: absolute;
+    width: 8% !important;
+    top: 48%;
+    left: 45%;
+}
+.title-collection {
+    font-size: 24px;
+    font-weight: 400;
+}
+.text-collection {
+    font-size: 15px;
+    color: var(--texth2-color);
+}
+.btn-collection {
+    font-size: 14px;
+    color: var(--main-color) !important;
 }

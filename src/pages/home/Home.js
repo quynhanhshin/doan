@@ -17,6 +17,8 @@ import Posts from "../../components/posts/Posts";
 import Form_email from "../../components/form-email/Form_email";
 import Slider_sp from "../../components/slider_sp/Slider_sp";
 import Collection from "../../components/collection/Collection";
+import Test from "../../components/test/Test";
+import Gallery from "../../components/gallery/Gallery";
 export default function Home() {
     const [data, setData] = useState([]);
     const url = "https://658c2957859b3491d3f59c3a.mockapi.io/Product";
@@ -130,6 +132,7 @@ export default function Home() {
             </div>
             <Slider_sp />
             <Collection />
+            <Gallery />
             <Footer />
         </div>
     );
