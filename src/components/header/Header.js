@@ -42,13 +42,13 @@ function Header() {
                                 <NavLink href="/blog">BLOG</NavLink>
                             </NavItem>
                         </Nav>
-                        <NavItem>
+                    </Collapse>
+                    <NavItem>
                             <NavLink className="cart" href="/cart">
                                 <img alt="cart" src={iconcart} />
                                 CART
                             </NavLink>
                         </NavItem>
-                    </Collapse>
                 </Navbar>
             </div>
         </div>
